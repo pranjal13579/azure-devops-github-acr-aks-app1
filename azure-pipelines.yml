@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'a9485a78-4f93-42a0-94cc-647109f62c9e'
-  imageRepository: 'ppcontainer123'
+  imageRepository: 'pp/ppcontainer123'
   containerRegistry: 'kbcontregpp.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
