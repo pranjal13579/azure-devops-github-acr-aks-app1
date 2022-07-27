@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pranjalppcontainer 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pranjalppcontainer
+  template:
+    metadata:
+      labels:
+        app: pranjalppcontainer 
+    spec:
+      containers:
+        - name: pranjalppcontainer 
+          image: kbcontregpp.azurecr.io/pranjalppcontainer
+          ports:
+          - containerPort: 80
